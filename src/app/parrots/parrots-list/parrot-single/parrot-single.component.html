@@ -1,0 +1,13 @@
+
+
+<a [routerLink]="[index]" routerLinkActive="active" class="list-group-item clearfix singleitem"
+   >
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{parrot.name}}</h4>
+
+  </div>
+  <span class="pull-right">
+        <img [src]="parrot.imagePath" alt="{{parrot.name}}"
+             class="img-responsive" style="max-height: 50px;"></span>
+</a>
+

@@ -1,0 +1,9 @@
+.addparrot{
+  background-color: orange;
+  border:0px solid transparent;
+  color: #000;
+}
+
+.addparrot:hover{
+  font-size:20px;
+}

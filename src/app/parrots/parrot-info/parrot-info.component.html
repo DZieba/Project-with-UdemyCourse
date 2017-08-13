@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+ <div class="col-xs-8">
+<h1>{{parrot.name}}</h1>
+ </div>
+  <div class="col-xs-4">
+    <div class="btn-group " appDropdown>     <!-- creating own directive which toggles a css class -->
+      <button
+
+
+        type="button"
+        class="btn btn-primary dropdown-toggle manage">
+        Parrot options <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" >
+        <li routerLinkActive="active"><a [routerLink]="['/parrots']" style="cursor: pointer;">Go to parrot list</a></li>
+        <li routerLinkActive="active"><a (click)="onEditParrot()" style="cursor: pointer;">Edit parrot detail</a></li>
+        <li routerLinkActive="active"><a  style="cursor: pointer;"(click)="deleteParrot()" >Delete parrot</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <img class="parrotplace" [src]=parrot.imagePath>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="descr">
+   {{parrot.description}}
+    </div>
+  </div>
+</div>
+
+

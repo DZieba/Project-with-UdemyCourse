@@ -1,0 +1,16 @@
+.parrotplace{
+  margin:15px;
+  box-shadow: 2px 5px 5px 5px rgba(36, 36, 36, 0.88);
+}
+.descr{
+  margin:10px;
+}
+.manage{
+  margin-top:25px;
+  background-color: orange;
+  border:0px solid transparent;
+  color: #000;
+}
+.manage:hover{
+  font-size:20px;
+}
